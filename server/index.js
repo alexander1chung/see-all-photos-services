@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const AWS = require('aws-sdk');
 const fs = require('fs');
-const config = require('../config.js');
+// const config = require('../config.js');
 // load database files
 const Photo = require('../db/model.js');
 
@@ -13,12 +13,12 @@ const app = express();
 const port = 3002;
 
 // configuration of the AWS environment
-AWS.config.update({
-  accessKeyId: `${config.steps.import.key}`,
-  secretAccessKey: `${config.steps.import.secret}`,
-});
+// AWS.config.update({
+//   accessKeyId: `${config.steps.import.key}`,
+//   secretAccessKey: `${config.steps.import.secret}`,
+// });
 
-const s3 = new AWS.S3();
+// const s3 = new AWS.S3();
 
 // mongoose instance connection url connection
 const options = { useNewUrlParser: true, useUnifiedTopology: true };
