@@ -10,7 +10,7 @@ const fs = require('fs');
 const Photo = require('../db/model.js');
 
 const app = express();
-const port = 3002;
+const port = 3004;
 
 // configuration of the AWS environment
 // AWS.config.update({

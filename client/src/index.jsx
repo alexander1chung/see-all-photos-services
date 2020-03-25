@@ -6,4 +6,4 @@ import App from './components/App.jsx';
 console.log('this is your index file');
 
 
-ReactDOM.render(<App />, document.getElementById('Gallery'));
+ReactDOM.render(<App />, document.getElementById('Photos'));
